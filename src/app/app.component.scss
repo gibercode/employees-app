@@ -1,0 +1,48 @@
+$grey:     #bfcde0;
+$darkGrey: #212121;
+
+@mixin common {
+  width: 100%;
+  border: solid 0.125rem $darkGrey;
+  border-radius: 0.3125rem;
+}
+
+.input {
+  @include common();
+  padding: 0.4rem 0.6rem;
+
+  &::placeholder {
+    color: $grey
+  }
+}
+
+.select {
+  @include common();
+  padding: 0.1rem;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  padding: 3rem;
+  background-color: $darkGrey;
+  min-height: 100vh;
+}
+
+.child-one {
+  width: 30%;
+}
+
+.child-two {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  padding: 1rem 0;
+}
+
+.table-parent {
+  width: 90%;
+}
